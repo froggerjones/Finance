@@ -1,0 +1,19 @@
+January 2023
+
+Objective:
+Complete 10 basic python coding challenges, using basic financial concepts as tasks to complete.
+
+
+Challenges are as follows:
+
+1.  Write a program that calculates the compound interest on a savings account, given the principal, annual interest rate, and number of years.
+2.  Create a program that calculates the net present value of a series of cash flows, given a discount rate.
+3.  Write a script that calculates the future value of an investment, given the principal, annual interest rate, and number of years.
+4.  Create a program that simulates a Monte Carlo simulation for a given stock price and returns.
+5.  Write a script that calculates the internal rate of return for a series of cash flows.
+6.  Create a program that calculates the moving average of a given set of stock prices.
+7.  Write a script that calculates the beta of a stock, given the stock's returns and the market returns.
+8.  Create a program that calculates the value at risk for a portfolio of stocks, given a given confidence level.
+9.  Create a program that simulates a simple stock market portfolio, allowing the user to buy and sell stocks and view their current value.
+10.  Write a script that calculates the Black-Scholes option pricing model for a given set of parameters.
+
