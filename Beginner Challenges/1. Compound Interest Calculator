@@ -1,0 +1,19 @@
+# Write a program that calculates the compound interest on a savings account,
+# given the principal, annual interest rate, and number of years.
+
+# Step One: create the inputs using the parameters above (principal, rate, time).
+# Step Two: write the formula for compound interest using input parameters.
+# Print Result.
+
+# Step One: Inputs
+
+principal = float(input("Enter the Principal Amount: "))
+rate = float(input("Enter the Interest Rate: "))
+years = int(input("Enter the number of Years: "))
+frequency = int(input("Enter the nb. of times the interest is compounded per year: "))
+
+def compound_interest(principal, rate, years, frequency):
+    return principal * (1 + (rate/100) / frequency) ** (frequency * years)
+
+compound = compound_interest(principal, rate, years, frequency)
+print 'The compound interest after ',years,' years, compounding ',frequency,' times per year is: ',round(compound,2),'euros'
