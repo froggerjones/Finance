@@ -1,0 +1,23 @@
+# Create a program that calculates the net present value of a series of cash flows, given a discount rate.
+
+# There are a number of steps involved:
+# Step One: define the formula and variables
+# Step Two: include a loop to iterate over the array of cashflows input by the user
+# Step Three: create the user prompts - ensure to notify users of "," for array formatting
+# Step Four: Print Result
+
+# Jargon Buster: PV = Present Value / NPV = Net Present Value / Disc = discount
+
+# Step One:
+
+def Net_Present_Value(Disc_Rate, CashFlows):                       # define the function for NPV
+    PV = 0                                                         # set PV to 0
+    for i, cashflow in enumerate(CashFlows):                       # for loop to iterate over the cashflows // enumerate(variable) returns the index and value of each item in the array
+        PV += cashflow / (1 + (Disc_Rate/100)) ** (i + 1)                # += adds the result to the variable and sets to the new resulting value
+    return PV                                                      # return the sum of all the results added together
+
+rate = float(input("Enter Discount Rate: "))                       # user input prompts for setting variables
+CashFlows = input("Please enter cash flows for each year, separated by comma: ")
+NPV = Net_Present_Value(rate, CashFlows)                           # final variable based on function & user input variables
+print "The Net Present Value is: ", round(NPV,2)                            # print result
+
